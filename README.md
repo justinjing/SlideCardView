@@ -19,7 +19,6 @@ CABasicAnimation代码块block回调代码，例如：
     anotherAnimation.fromValue = @(self.anotherImageView.layer.position.x);
     anotherAnimation.toValue = @(FF_SCREEN_WIDTH);
     anotherAnimation.duration = 1;
-    anotherAnimation.autoreverses = NO;
     [anotherAnimation setCompletion:^(BOOL finished) {
         [self animationRepeat];
     }];
