@@ -1,6 +1,10 @@
 # SlideCardView
 左右滑动卡片
 
+### 本代码主要引入了对CABasicAnimation扩展，block回调
+``` Object-c
+    #import "CAAnimation+Blocks.h"
+```
 ### CABasicAnimation block回调
 CABasicAnimation代码块block回调代码，例如：
 ``` Object-c
