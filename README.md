@@ -14,3 +14,5 @@ CABasicAnimation代码块block回调代码，例如：
     }];
     [self.anotherImageView.layer addAnimation:anotherAnimation forKey:@"1"];
 ```
+### 示例图片
+![demo](https://github.com/justinjing/SlideCardView/blob/master/Screenshot/demo.gif)
