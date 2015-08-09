@@ -4,6 +4,13 @@
 ### 本代码主要引入了对CABasicAnimation扩展，block回调
 ``` Object-c
     #import "CAAnimation+Blocks.h"
+   
+    @interface CAAnimation (BlocksAddition)
+
+    @property (nonatomic, copy) void (^completion)(BOOL finished);
+    @property (nonatomic, copy) void (^start)(void);
+
+    - (void)setCompletion:(void (^)(BOOL finished))completion; // Forces auto-complete of setCompletion: to add the name          'finished' in the block parameter
 ```
 ### CABasicAnimation block回调
 CABasicAnimation代码块block回调代码，例如：
